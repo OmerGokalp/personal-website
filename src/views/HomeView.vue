@@ -37,13 +37,24 @@ onMounted(async () => {
     </div>
 
     <div v-else class="basis-auto">
-      <div class="flex text-4xl font-bold">
-        {{ info.fullname }}
+      <div class="flex flex-wrap text-4xl font-bold items-center">
+        <div class="basis-full md:basis-auto basis- pr-2">
+          <div class="flex justify-center">
+            <img src="https://omergokalp.netlify.app/foto/pp2.jpg" class="rounded-full w-64">
+          </div>
+        </div>
+
+        <div class="basis-full mt-4 md:mt-0 md:basis-auto text-2xl">
+          <div class="flex justify-center">
+            {{ info.fullname }}
+          </div>
+
+          <div class="flex justify-center">
+            Age: {{ info.age }}
+          </div>
+        </div>
       </div>
 
-      <div class="flex text-2xl">
-        Age: {{ info.age }}
-      </div>
     </div>
   </div>
 </template>
